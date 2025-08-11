@@ -4,6 +4,13 @@ This project develops a system that separates audio sources from mixtures using 
 The model demonstrates strong performance in extracting underrepresented instruments like trumpets, with improvements in Signal-to-Distortion Ratio (SDR) and spectrum consistency after fine-tuning. While violin separation remains robust from pre-training, trumpet extraction benefits significantly from targeted adaptation. The resulting system has potential applications in music production, sound editing, and assistive listening.
 
 ## TABLE I: Comparison of SDR and SDRi for Violin and Trumpet Separation
+| Instrument | Model              | SDR   | SDRi  |
+|------------|--------------------|-------|-------|
+| Violin     | Pre-trained Model  | 17.57 | 17.10 |
+| Violin     | Fine-Tuned Model   | 16.87 | 15.88 |
+| Trumpet    | Pre-trained Model  | -9.91 | -5.59 |
+| Trumpet    | Fine-Tuned Model   | 10.09 | 9.01  |
+
 ## TABLE II: Comparison of SDR and SDRi for Violin and Trumpet Separation
 | Instrument | Model              | Correlation | MSE    |
 |------------|--------------------|-------------|--------|
